@@ -11,14 +11,14 @@ end
 
 module Agility
   class Application < Rails::Application
-  
+
     config.generators do |g|
       g.test_framework :shoulda, :fixtures => true
       g.fallbacks[:shoulda] = :test_unit
       g.fixture_replacement = :factory_girl_rails
     end
 
-  
+
     config.hobo.dryml_only_templates = true
 
     config.hobo.dont_emit_deprecated_routes = true
@@ -44,6 +44,9 @@ module Agility
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :en
+
+    I18n.enforce_available_locales = false
+    I18n.available_locales = [:en]
 
     # JavaScript files you want as :defaults (application.js is always included).
     # config.action_view.javascript_expansions[:defaults] = %w(jquery rails)

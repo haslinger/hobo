@@ -15,7 +15,7 @@ end
 
 class AjaxFormTest < ActionDispatch::IntegrationTest
   include Capybara::DSL
-  include Factory::Syntax::Methods
+  include FactoryGirl::Syntax::Methods
 
   self.use_transactional_fixtures = false
 
