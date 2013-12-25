@@ -7,6 +7,5 @@ Agility::Application.configure do
   config.action_controller.allow_forgery_protection    = false
   config.action_mailer.delivery_method = :test
   config.active_support.deprecation = :stderr
-
   Rails.application.routes.default_url_options[:host] = '127.0.0.1:7777'
 end

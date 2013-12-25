@@ -29,7 +29,7 @@ GIT
 
 GIT
   remote: git://github.com/jnicklas/capybara.git
-  revision: 39272a8c2515cfaafece70d7f6ebd0a0532baebe
+  revision: 60683d9054b4f4024c57591a122cebfe11dfdcc3
   specs:
     capybara (2.2.0)
       mime-types (>= 1.16)
@@ -41,29 +41,29 @@ GIT
 PATH
   remote: ../..
   specs:
-    dryml (2.1.0.pre1)
+    dryml (2.1.0.pre3)
       actionpack (~> 4.0.2)
-      hobo_support (= 2.1.0.pre1)
-    hobo (2.1.0.pre1)
-      dryml (= 2.1.0.pre1)
-      hobo_fields (= 2.1.0.pre1)
-      hobo_support (= 2.1.0.pre1)
+      hobo_support (= 2.1.0.pre3)
+    hobo (2.1.0.pre3)
+      dryml (= 2.1.0.pre3)
+      hobo_fields (= 2.1.0.pre3)
+      hobo_support (= 2.1.0.pre3)
       hobo_will_paginate
-    hobo_clean (2.1.0.pre1)
-      hobo (= 2.1.0.pre1)
-      hobo_jquery (= 2.1.0.pre1)
-    hobo_fields (2.1.0.pre1)
-      hobo_support (= 2.1.0.pre1)
-    hobo_jquery (2.1.0.pre1)
-      hobo_rapid (= 2.1.0.pre1)
+    hobo_clean (2.1.0.pre3)
+      hobo (= 2.1.0.pre3)
+      hobo_jquery (= 2.1.0.pre3)
+    hobo_fields (2.1.0.pre3)
+      hobo_support (= 2.1.0.pre3)
+    hobo_jquery (2.1.0.pre3)
+      hobo_rapid (= 2.1.0.pre3)
       jquery-rails (~> 2.0)
-    hobo_jquery_ui (2.1.0.pre1)
-      hobo (= 2.1.0.pre1)
-      hobo_jquery (= 2.1.0.pre1)
+    hobo_jquery_ui (2.1.0.pre3)
+      hobo (= 2.1.0.pre3)
+      hobo_jquery (= 2.1.0.pre3)
       jquery-ui-themes (~> 0.0.4)
-    hobo_rapid (2.1.0.pre1)
-      hobo (= 2.1.0.pre1)
-    hobo_support (2.1.0.pre1)
+    hobo_rapid (2.1.0.pre3)
+      hobo (= 2.1.0.pre3)
+    hobo_support (2.1.0.pre3)
       rails (~> 4.0.2)
 
 GEM
@@ -130,7 +130,7 @@ GEM
       railties (>= 3.0.0)
     ffi (1.9.3)
     hike (1.2.3)
-    hobo_will_paginate (2.1.0)
+    hobo_will_paginate (2.1.1)
     httparty (0.12.0)
       json (~> 1.8)
       multi_xml (>= 0.5.2)
@@ -176,9 +176,9 @@ GEM
       activesupport (= 4.0.2)
       rake (>= 0.8.7)
       thor (>= 0.18.1, < 2.0)
-    rake (10.1.0)
+    rake (10.1.1)
     rubyzip (1.1.0)
-    sass (3.2.12)
+    sass (3.2.13)
     sass-rails (4.0.1)
       railties (>= 4.0.0, < 5.0)
       sass (>= 3.1.10)
@@ -214,7 +214,7 @@ GEM
     turbolinks (2.1.0)
       coffee-rails
     tzinfo (0.3.38)
-    uglifier (2.3.3)
+    uglifier (2.4.0)
       execjs (>= 0.3.0)
       json (>= 1.8.0)
     websocket (1.0.7)

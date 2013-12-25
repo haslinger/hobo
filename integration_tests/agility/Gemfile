@@ -1,6 +1,8 @@
 source 'http://rubygems.org'
 
 gem 'rails', '4.0.2'
+gem "protected_attributes"
+gem "turbolinks"
 
 platform :ruby do
   gem 'sqlite3'
