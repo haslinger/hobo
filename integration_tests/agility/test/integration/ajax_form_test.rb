@@ -66,7 +66,7 @@ class AjaxFormTest < ActionDispatch::IntegrationTest
     find("#form1").fill_in("story_status_name", :with => "foo1")
     find("#form1").click_button("new")
     wait_for_updates_to_finish  # we don't need this every time, but if we don't throw it in occasionally, things do stop working
-
+debugger
     assert find(".statuses table tbody tr:first .story-status-name").has_text?("foo1")
     wait_for_updates_to_finish  # we don't need this every time, but if we don't throw it in occasionally, things do stop working
 
