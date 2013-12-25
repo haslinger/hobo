@@ -1,0 +1,81 @@
+<!DOCTYPE html>  <html lang="en">
+    <head>      <title>Home : Smoke</title>
+      
+  <link class="app-stylesheet" href="/assets/front.css" media="screen" rel="stylesheet">
+
+      
+      <script src="/assets/front.js"></script>
+<script type="text/javascript"></script><meta content="width=device-width, initial-scale=1.0" name="viewport">      <meta content="authenticity_token" name="csrf-param">
+<meta content="Q89lUt31mml++OP4ivl2JEjKYgVdrjVgHcIk5C5cye4=" name="csrf-token">
+</head>
+<body class="front-page"><div id="ajax-progress-wrapper"><div class="ajax-progress" id="ajax-progress"><div>        <span id="ajax-progress-text"></span>
+</div></div></div><div class="navbar"><div class="navbar-inner navbar-innner">  <div class="header container"><a class="btn btn-navbar" data-target=".nav-collapse" data-toggle="collapse" href="#">                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+</a><div class="app-name">                <a class="brand" href="/">Smoke</a>
+</div><ul class="navigation main-nav nav">    <li class="active">    <a href="/">Home</a>
+</li>
+</ul><div class="nav-collapse collapse"><ul class="navigation account-nav nav pull-right">      <li class="search">  <div class="search" data-rapid='{"live-search": {}}'>    <form action="/search" class="form-search" data-rapid="{&quot;form&quot;:{&quot;ajax_attrs&quot;:{&quot;refocus-form&quot;:true,&quot;update&quot;:&quot;search-results-part&quot;,&quot;message&quot;:&quot;Querying...&quot;}}}" method="post" remove-class="form-horizontal"><div class="hidden-fields"><input id="page_path" name="page_path" type="hidden" value="/"><input name="authenticity_token" type="hidden" value="Q89lUt31mml++OP4ivl2JEjKYgVdrjVgHcIk5C5cye4="></div><input name="search_version" type="hidden" value="2">      <input class="live-search search-query" name="query" placeholder="Search" type="search">
+      <i class="icon-search"></i>
+
+</form>
+    <div class='part-wrapper' id='search-results-part'>
+    </div>
+</div></li>
+      <li class="dev-user-changer"><select class="dev-user-changer" onchange="location.href = '/dev/set_current_user?login=' + encodeURIComponent(this.options[this.selectedIndex].value)">    <option value="">Guest</option>
+    
+</select></li>
+        <li class="nav-item log-in"><a href="/login">Login</a></li>
+        
+</ul></div></div>
+</div></div><div class="container bootstrap-content"><div class="row main-row"><div class="span12 main-column"><div class="section with-flash content">      <div class="header content-header hero-unit">      <h1>Welcome to Smoke</h1>
+<div class="section welcome-message">            <h3>Congratulations! Your Hobo Rails App is up and running</h3>
+<ul>          <li>To customise this page: edit app/views/front/index.dryml</li>
+</ul>
+          <h3 style="margin-top: 20px;">There are no user accounts - please provide the details of the site administrator</h3>
+    <form action="/users" class="form-horizontal new user" method="post"><div class="hidden-fields"><input id="page_path" name="page_path" type="hidden" value="/"><input name="authenticity_token" type="hidden" value="Q89lUt31mml++OP4ivl2JEjKYgVdrjVgHcIk5C5cye4="></div><div><div class="row" fields="name, email_address, password, password_confirmation">  <div class="span12"> 
+<div class="control-group   name-field">
+<label class="control-label name-label" for="user_name">          Name
+</label>
+<div class="controls">                <input class="name-tag string user-name" id="user_name" name="user[name]" type="text">
+
+
+</div>
+</div>
+<div class="control-group   email-address-field">
+<label class="control-label email-address-label" for="user_email_address">          Email address
+</label>
+<div class="controls">                <input class="email-address-tag email-address user-email-address" id="user_email_address" name="user[email_address]" type="text">
+
+
+</div>
+</div>
+<div class="control-group   password-field">
+<label class="control-label password-label" for="user_password">          Password
+</label>
+<div class="controls">                <input class="password-tag password user-password" id="user_password" name="user[password]" type="password">
+
+
+</div>
+</div>
+<div class="control-group   password-confirmation-field">
+<label class="control-label password-confirmation-label" for="user_password_confirmation">          Password confirmation
+</label>
+<div class="controls">                <input class="password-confirmation-tag password user-password-confirmation" id="user_password_confirmation" name="user[password_confirmation]" type="password">
+
+
+</div>
+</div> </div>  </div>
+</div><div class="actions form-actions">      <input class="btn btn-primary button submit-button" type="submit" value="Register Administrator">
+</div></form>
+
+
+
+</div></div>
+
+
+</div></div></div></div>
+  
+    <span data-rapid-page-data="{&quot;form_auth_token&quot;:{&quot;name&quot;:&quot;authenticity_token&quot;,&quot;value&quot;:&quot;Q89lUt31mml++OP4ivl2JEjKYgVdrjVgHcIk5C5cye4=&quot;},&quot;hobo_parts&quot;:{&quot;search-results-part&quot;:&quot;BAhbCDoYc2VhcmNoX3Jlc3VsdHNfcGFydEkiCXRoaXMGOgZFVFsA--60e77a10b890604b54a8325669a4f89e11e1ccfd&quot;}}" style="display: none;">
+</body>
+  </html>

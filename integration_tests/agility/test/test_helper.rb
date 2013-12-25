@@ -2,8 +2,10 @@ ENV["RAILS_ENV"] = "test"
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
-class ActiveSupport::TestCase
-  include Factory::Syntax::Methods
+I18n.enforce_available_locales = false
+debugger
 
-  # Add more helper methods to be used by all tests here...
+class ActiveSupport::TestCase
+  include FactoryGirl::Syntax::Methods
+
 end

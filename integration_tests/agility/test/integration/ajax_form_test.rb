@@ -7,6 +7,7 @@ require 'database_cleaner'
 
 Capybara.app = Agility::Application
 Capybara.default_driver = :rack_test
+Capybara.server_port = 7777
 DatabaseCleaner.strategy = :truncation
 
 Capybara.register_driver :selenium_chrome do |app|
@@ -15,7 +16,7 @@ end
 
 class AjaxFormTest < ActionDispatch::IntegrationTest
   include Capybara::DSL
-  include Factory::Syntax::Methods
+  include FactoryGirl::Syntax::Methods
 
   self.use_transactional_fixtures = false
 
@@ -64,8 +65,10 @@ class AjaxFormTest < ActionDispatch::IntegrationTest
     assert has_content?("0 failed.")
 
     find("#form1").fill_in("story_status_name", :with => "foo1")
+    assert_not page.has_content? 'foo1'
     find("#form1").click_button("new")
-    assert find(".statuses table tbody tr:first .story-status-name").has_text?("foo1")
+    assert page.has_content? 'foo1'
+    assert find(".statuses table tbody tr:nth-child(1) .story-status-name").has_text?("foo1")
     # wait_for_updates_to_finish  # we don't need this every time, but if we don't throw it in occasionally, things do stop working
 
     find("#form2").fill_in("story_status_name", :with => "foo2")
