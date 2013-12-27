@@ -22,12 +22,6 @@ GIT
       hobo (> 1.4.0.pre5)
 
 GIT
-  remote: git://github.com/Hobo/will_paginate.git
-  revision: e2bfe0a07c9fd1c6d7bf914e25db5182697ae7c2
-  specs:
-    will_paginate (3.0.4.hobo)
-
-GIT
   remote: git://github.com/jnicklas/capybara.git
   revision: 60683d9054b4f4024c57591a122cebfe11dfdcc3
   specs:
@@ -257,4 +251,3 @@ DEPENDENCIES
   sqlite3
   turbolinks
   uglifier
-  will_paginate!

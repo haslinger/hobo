@@ -9,6 +9,8 @@ class StoryStatus < ActiveRecord::Base
 
   validate :name_must_be_valid
 
+  attr_accessible :name
+
   def name_must_be_valid
     errors[:base] << "name not valid" if name=="invalid name"
   end

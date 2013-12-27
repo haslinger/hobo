@@ -68,6 +68,7 @@ class AjaxFormTest < ActionDispatch::IntegrationTest
     assert_not page.has_content? 'foo1'
     find("#form1").click_button("new")
     assert page.has_content? 'foo1'
+    debugger
     assert find(".statuses table tbody tr:nth-child(1) .story-status-name").has_text?("foo1")
     # wait_for_updates_to_finish  # we don't need this every time, but if we don't throw it in occasionally, things do stop working
 

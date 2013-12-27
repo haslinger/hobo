@@ -14,6 +14,8 @@ class Task < ActiveRecord::Base
 
   acts_as_list :scope => :story
 
+  attr_accessible :description, :users, :story, :story_id, :position
+
   # --- Permissions --- #
 
   def create_permitted?

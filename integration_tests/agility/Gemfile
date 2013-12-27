@@ -24,7 +24,6 @@ gem "hobo_clean", :path => "../.."
 gem "hobo_jquery", :path => "../.."
 gem "hobo_jquery_ui", :path => "../.."
 gem "jquery-ui-themes", "~> 0.0.4"
-gem "will_paginate", :git => "git://github.com/Hobo/will_paginate.git"
 gem "kramdown"
 gem "RedCloth"
 gem "shoulda", :group => :test
