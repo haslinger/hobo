@@ -23,6 +23,7 @@ gem "hobo_rapid", :path => "../.."
 gem "hobo_clean", :path => "../.."
 gem "hobo_jquery", :path => "../.."
 gem "hobo_jquery_ui", :path => "../.."
+gem "hobo_will_paginate"
 gem "jquery-ui-themes", "~> 0.0.4"
 gem "kramdown"
 gem "RedCloth"
@@ -33,6 +34,7 @@ group :development, :test do
   gem 'capybara', :git => 'git://github.com/jnicklas/capybara.git'#, :ref => "83d8574c1d"  #"756ec1b2af70c66093c3b25976f520a3e6c3c2ae"
   gem 'database_cleaner'
   gem 'selenium-webdriver'
+  gem 'therubyracer', :platforms => :ruby
 end
 
 gem "jquery-rails"
